@@ -44,7 +44,14 @@ def return_min(l):
 
 - [Extend](https://repl.it/@Admin7/creatematrix)
 ```python
-# copy & paste your solution here
+def create_matrix(h, w):
+  result = []
+  for i in range(h):
+    row = []
+    for x in range(w):
+      row.append('#')
+    result.append(row)
+  return result
 ```
 
 
