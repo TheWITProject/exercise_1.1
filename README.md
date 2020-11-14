@@ -22,7 +22,9 @@ def return_max(l):
     return(max(l))
 
 - [Min Value](https://repl.it/@Admin7/minvalue)
+
 ```python
+
 def return_min(l):
   if len(l) == 0:
     return None
