@@ -15,6 +15,11 @@ When you are done:
 #### Loops & Lists
 - [Max Value](https://repl.it/@Admin7/maxvalue)
 ```python
+
+```
+
+- [Min Value](https://repl.it/@Admin7/minvalue)
+```python
 def return_min(l):
   if len(l) == 0:
     return None
@@ -23,11 +28,6 @@ def return_min(l):
     if i < result:
       result = i
   return result
-```
-
-- [Min Value](https://repl.it/@Admin7/minvalue)
-```python
-# copy & paste your solution here
 ```
 
 - [Extend](https://repl.it/@Admin7/extendlist)
