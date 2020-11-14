@@ -15,7 +15,14 @@ When you are done:
 #### Loops & Lists
 - [Max Value](https://repl.it/@Admin7/maxvalue)
 ```python
-# copy & paste your solution here
+def return_min(l):
+  if len(l) == 0:
+    return None
+  result = l[0]
+  for i in l:
+    if i < result:
+      result = i
+  return result
 ```
 
 - [Min Value](https://repl.it/@Admin7/minvalue)
