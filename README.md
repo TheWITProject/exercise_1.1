@@ -37,7 +37,10 @@ def return_min(l):
 
 - [Extend](https://repl.it/@Admin7/extendlist)
 ```python
-# copy & paste your solution here
+def return_extended(l, iter):
+  for i in iter:
+    l.append(i)
+  return l
 ```
 
 - [Extend](https://repl.it/@Admin7/creatematrix)
