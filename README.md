@@ -25,14 +25,11 @@ def return_max(l):
 
 ```python
 
-def return_min(l):
-  if len(l) == 0:
-    return None
-  result = l[0]
-  for i in l:
-    if i < result:
-      result = i
-  return result
+def return_max(l):
+  if len(l) < 1:
+    return 'None'
+  else:
+    return(min(l))
 ```
 
 - [Extend](https://repl.it/@Admin7/extendlist)
