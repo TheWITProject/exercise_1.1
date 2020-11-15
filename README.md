@@ -20,7 +20,7 @@ def return_max(l):
     return 'None'
   else:
     return(max(l))
-
+```
 - [Min Value](https://repl.it/@Admin7/minvalue)
 
 ```python
