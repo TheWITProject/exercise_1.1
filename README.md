@@ -59,7 +59,7 @@ def create_matrix(h, w):
 #### Dictionaries
 - [Receipt Tally](https://repl.it/@Admin7/receipttally)
 ```python
-# def get_total(h, w):
+def get_total(h, w):
   total = 0
   new = 0
   for i in h:
