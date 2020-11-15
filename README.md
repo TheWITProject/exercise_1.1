@@ -1,3 +1,4 @@
+#Samantha Paradero and Naima Mamataz
 ## Summary
 You will be working through some coding problems on [repl.it](https://www.repl.it/). When you have solved a problem, please copy and paste the solution into the codeblock below each question. Many of these problems can be solved using built-in methods. Try to solve them with and without!
 
