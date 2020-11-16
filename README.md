@@ -49,6 +49,16 @@ def return_extended(l, iter):
 - [Extend](https://repl.it/@Admin7/creatematrix)
 ```python
 # copy & paste your solution here
+def create_matrix(h, w):
+    matrix=[]
+    for i in range(h):
+        row=[]
+        for j in range(w):
+            value='#'
+            row.append(value)
+        matrix.append(row)
+    print(matrix)
+    return
 ```
 
 
