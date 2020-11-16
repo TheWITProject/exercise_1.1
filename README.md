@@ -16,6 +16,17 @@ When you are done:
 - [Max Value](https://repl.it/@Admin7/maxvalue)
 ```python
 # copy & paste your solution here
+def return_max(l):
+  if len(l)==0: 
+    print ('None')
+  else: 
+      l.sort()
+      max_number=l[0]
+      for i in range(1,len(l)):
+        if l[i] >max_number:
+          max_number=l[i]
+          print (max_number)
+  return
 ```
 
 - [Min Value](https://repl.it/@Admin7/minvalue)
