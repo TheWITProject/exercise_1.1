@@ -21,11 +21,7 @@ def return_max(l):
     print ('None')
   else: 
       l.sort()
-      max_number=l[0]
-      for i in range(1,len(l)):
-        if l[i] >max_number:
-          max_number=l[i]
-          print (max_number)
+      print(l[-1])
   return
 ```
 
@@ -37,12 +33,8 @@ def return_min(l):
     print ('None')
   else: 
       l.sort()
-      min_number=l[0]
-      for i in range(1,len(l)):
-        if l[i] < min_number:
-          min_number=l[i]
-          print (min_number)
-  return 'a string to make sure all cases fail'
+      print(l[0])
+  return
 ```
 
 - [Extend](https://repl.it/@Admin7/extendlist)
