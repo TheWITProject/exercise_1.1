@@ -97,7 +97,10 @@ def callbacker(l, callback):
 
 - [Recursion?! Recursive Countdown](https://repl.it/@Admin7/recursivecountdown)
 ```python
-# copy & paste your solution here
+def recursive_countdown(n):
+    if n > 0:
+        print(n)
+        return recursive_countdown(n-1)
 ```
 
 
