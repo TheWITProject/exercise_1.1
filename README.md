@@ -32,6 +32,17 @@ def return_max(l):
 - [Min Value](https://repl.it/@Admin7/minvalue)
 ```python
 # copy & paste your solution here
+def return_min(l):
+  if len(l)==0: 
+    print ('None')
+  else: 
+      l.sort()
+      min_number=l[0]
+      for i in range(1,len(l)):
+        if l[i] < min_number:
+          min_number=l[i]
+          print (min_number)
+  return 'a string to make sure all cases fail'
 ```
 
 - [Extend](https://repl.it/@Admin7/extendlist)
