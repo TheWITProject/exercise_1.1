@@ -40,6 +40,10 @@ def return_min(l):
 - [Extend](https://repl.it/@Admin7/extendlist)
 ```python
 # copy & paste your solution here
+def return_extended(l, iter):
+  l.extend(iter)
+  print (l)
+  return 
 ```
 
 - [Extend](https://repl.it/@Admin7/creatematrix)
