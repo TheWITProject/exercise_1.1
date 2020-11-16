@@ -68,7 +68,13 @@ def get_total(h, w):
 
 - [Translation](https://repl.it/@Admin7/translations)
 ```python
-# copy & paste your solution here
+def translation(word, lang):
+  ans = ''
+  for key,value in translations.items():
+    if key == word:
+      ans = translations[key]
+      ans = ans.get(lang)
+  return ans
 ```
 
 - [Check RSVP](https://repl.it/@Admin7/checkrsvp)
