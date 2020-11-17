@@ -107,7 +107,13 @@ def check_rsvp(event):
 #### Functions
 - [Aint No Callback Girl](https://repl.it/@Admin7/aintnocallbackgirl)
 ```python
-# copy & paste your solution here
+def callbacker(l,callback):
+  for i in range(0, len(l)):
+    if callback==double:
+      l[i]=double(l[i])
+    elif callback==add_one:
+      l[i]=add_one(l[i])
+  return l
 ```
 
 - [Recursion?! Recursive Countdown](https://repl.it/@Admin7/recursivecountdown)
