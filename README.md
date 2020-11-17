@@ -18,11 +18,10 @@ When you are done:
 # copy & paste your solution here
 def return_max(l):
   if len(l)==0: 
-    print ('None')
+    return None
   else: 
       l.sort()
-      print(l[-1])
-  return
+  return l[-1]
 ```
 
 - [Min Value](https://repl.it/@Admin7/minvalue)
@@ -30,11 +29,10 @@ def return_max(l):
 # copy & paste your solution here
 def return_min(l):
   if len(l)==0: 
-    print ('None')
+    return None
   else: 
       l.sort()
-      print(l[0])
-  return
+  return l[0]
 ```
 
 - [Extend](https://repl.it/@Admin7/extendlist)
