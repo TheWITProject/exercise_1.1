@@ -82,7 +82,12 @@ def translation(word, lang):
 
 - [Check RSVP](https://repl.it/@Admin7/checkrsvp)
 ```python
-# copy & paste your solution here
+def check_rsvp(event):
+  total = 0
+  for i in event:
+    if event.get(i) == True:
+      total = total + 1
+  return total
 ```
 
 
