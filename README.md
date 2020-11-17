@@ -14,23 +14,52 @@ When you are done:
 
 #### Loops & Lists
 - [Max Value](https://repl.it/@Admin7/maxvalue)
-```python
-# copy & paste your solution here
+```
+def return_max(l):
+  
+  if len(l) == 0:
+    return None 
+  
+  max_number = l[0]
+  for i in range (1, len(l)):
+    if l[i] > max_number: 
+      max_number = l[i]
+      
+  return max_number 
 ```
 
 - [Min Value](https://repl.it/@Admin7/minvalue)
 ```python
-# copy & paste your solution here
+def return_min(l):
+  if len(l) == 0:
+    return None
+  min_number = l[0] 
+  for i in range (1, len(l)):
+    if l[i] < min_number: 
+      min_number = l[i]
+  return min_number 
 ```
 
 - [Extend](https://repl.it/@Admin7/extendlist)
 ```python
-# copy & paste your solution here
+def return_extended(l, iter):
+  l.extend(iter)
+  return l
 ```
 
 - [Extend](https://repl.it/@Admin7/creatematrix)
 ```python
-# copy & paste your solution here
+def create_matrix(h, w):
+  matrix=[]
+  for i in range(h):
+    row=[]
+    for j in range(w):
+      if w == 1:
+        break 
+      value='#'
+      row.append(value)
+    matrix.append(row)
+  return matrix
 ```
 
 
