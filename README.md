@@ -88,7 +88,14 @@ def create_matrix(h, w):
 
 - [Recursion?! Recursive Countdown](https://repl.it/@Admin7/recursivecountdown)
 ```python
-# copy & paste your solution here
+def recursive_countdown(n):
+  if n == 0:
+      print (0)
+  else:
+      print (n)
+      recursive_countdown(n-1)
+num = int(input('pick a number: '))
+recursive_countdown(num)
 ```
 
 
