@@ -77,6 +77,14 @@ def get_total(trans, category):
 - [Translation](https://repl.it/@Admin7/translations)
 ```python
 # copy & paste your solution here
+def translation(word, lang):
+  trans_for_word=translations.get(word)
+  if (trans_for_word == None):
+    return 'Word does not exist in translations'
+  lang_translation=trans_for_word.get(lang)
+  if (lang_translation == None):
+    return 'Language does not exist in translations'
+  return lang_translation
 ```
 
 - [Check RSVP](https://repl.it/@Admin7/checkrsvp)
