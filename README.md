@@ -64,6 +64,14 @@ def create_matrix(h, w):
 - [Receipt Tally](https://repl.it/@Admin7/receipttally)
 ```python
 # copy & paste your solution here
+def get_total(trans, category):
+  total=0
+  for lineitem in trans:
+    current_category = lineitem.get('category')
+    current_subtotal = lineitem.get('subtotal')
+    if current_category==category:
+      total += current_subtotal
+  return total
 ```
 
 - [Translation](https://repl.it/@Admin7/translations)
