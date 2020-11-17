@@ -40,8 +40,7 @@ def return_min(l):
 # copy & paste your solution here
 def return_extended(l, iter):
   l.extend(iter)
-  print (l)
-  return 
+  return l
 ```
 
 - [Extend](https://repl.it/@Admin7/creatematrix)
@@ -55,8 +54,7 @@ def create_matrix(h, w):
             value='#'
             row.append(value)
         matrix.append(row)
-    print(matrix)
-    return
+    return matrix
 ```
 
 
