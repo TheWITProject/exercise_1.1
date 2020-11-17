@@ -61,13 +61,11 @@ def create_matrix(h, w):
 #### Dictionaries
 - [Receipt Tally](https://repl.it/@Admin7/receipttally)
 ```python
-def get_total(h, w):
+def get_total(trans, category):
   total = 0
-  new = 0
-  for i in h:
-    for key,value in i.items():
-        if value == w:
-            total = total + i.get('subtotal')
+  for dict in trans:
+    if dict['category'] == category:
+      total = total + dict['subtotal']
   return total
 ```
 
