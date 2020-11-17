@@ -75,9 +75,9 @@ def get_total(h, w):
 ```python
 # copy & paste your solution here
 def translation(word, lang):
-  for translation in translations: 
-    if translation == word:
-     return translation.get(lang) **GOT STUCK**
+  if len(word) == 0:
+    return str('')
+  return translations[word][lang]
 ```
 
 - [Check RSVP](https://repl.it/@Admin7/checkrsvp)
@@ -85,17 +85,10 @@ def translation(word, lang):
 # copy & paste your solution here
 def check_rsvp(event):
   count = 0
-  if event == "birthday_party":
-    attendees = birthday_party
-    for attendee in attendees:
-      if attendees.get(attendee) == True:
-        count += 1 
-  else: 
-    attendees = met_gala
-    for attendee in attendees:
-      if attendees.get(attendee):
-        count += 1 
-  return count 
+  for attendee in event:
+    if event[attendee]:
+      count += 1
+  return count
 ```
 
 
@@ -120,12 +113,13 @@ def callbacker(l, callback):
 # copy & paste your solution here
 def recursive_countdown(n):
   # this is our base case. when should this function stop?
-  while (n != 0):
-    print(n)
-    n -= 1
- 
-  # this is our recursive case.
-  return recursive_countdown(5) # what argument should we provide?
+    if n < 2:
+        return n
+    else:
+        print (n)
+  # this is our recursive case.      
+        return(recursive_countdown(n-1))
+print(recursive_countdown(5))
 ```
 
 
