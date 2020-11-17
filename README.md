@@ -74,6 +74,12 @@ def create_matrix(h, w):
 - [Check RSVP](https://repl.it/@Admin7/checkrsvp)
 ```python
 # copy & paste your solution here
+def check_rsvp(event):
+  ppl=0
+  for i,j in event.items():
+    if j==True:
+      ppl +=1
+  return int(ppl)
 ```
 
 
