@@ -51,8 +51,10 @@ def create_matrix(h, w):
     for i in range(h):
         row=[]
         for j in range(w):
-            value='#'
-            row.append(value)
+          if w==1:
+            break
+          value='#'
+          row.append(value)
         matrix.append(row)
     return matrix
 ```
