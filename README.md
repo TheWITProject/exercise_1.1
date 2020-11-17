@@ -66,12 +66,30 @@ def create_matrix(h, w):
 #### Dictionaries
 - [Receipt Tally](https://repl.it/@Admin7/receipttally)
 ```python
-# copy & paste your solution here
+def get_total(trans, category):
+  total = 0
+  for lineitem in trans: #iterating over transactions which is a list
+    # print category name
+    current_category = lineitem.get('category')
+    current_subtotal = lineitem.get('subtotal')
+    if current_category == category:
+      total += current_subtotal
+  return total
 ```
 
 - [Translation](https://repl.it/@Admin7/translations)
 ```python
-# copy & paste your solution here
+def translation(word, lang): 
+  # no pre-assigned variable
+  # no loops
+  # what method do dictionaries have to access values safely?
+  trans_for_word = translations.get(word)
+  if (trans_for_word == None):
+    return 'Word does not exist in translations'
+  lang_translation = trans_for_word.get(lang) 
+  if (lang_translation == None):
+    return 'Language does not exist in translation'
+  return lang_translation
 ```
 
 - [Check RSVP](https://repl.it/@Admin7/checkrsvp)
