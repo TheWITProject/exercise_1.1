@@ -68,8 +68,7 @@ def create_matrix(h, w):
 ```python
 def get_total(trans, category):
   total = 0
-  for lineitem in trans: #iterating over transactions which is a list
-    # print category name
+  for lineitem in trans: 
     current_category = lineitem.get('category')
     current_subtotal = lineitem.get('subtotal')
     if current_category == category:
@@ -80,9 +79,6 @@ def get_total(trans, category):
 - [Translation](https://repl.it/@Admin7/translations)
 ```python
 def translation(word, lang): 
-  # no pre-assigned variable
-  # no loops
-  # what method do dictionaries have to access values safely?
   trans_for_word = translations.get(word)
   if (trans_for_word == None):
     return 'Word does not exist in translations'
@@ -117,7 +113,7 @@ def callbacker(l,callback):
 ```
 
 - [Recursion?! Recursive Countdown](https://repl.it/@Admin7/recursivecountdown)
-```python
+```python  
 def recursive_countdown(n):
   if n == 0:
       print (0)
