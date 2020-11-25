@@ -15,7 +15,14 @@ When you are done:
 #### Loops & Lists
 - [Max Value](https://repl.it/@Admin7/maxvalue)
 ```python
-# copy & paste your solution here
+# def return_max(l):
+  if len(l) == 0:
+    return None
+  max_value = -sys.maxsize + 1
+  for val in l:
+    if val > max_value:
+      max_value = val
+  return max_value
 ```
 
 - [Min Value](https://repl.it/@Admin7/minvalue)
@@ -25,7 +32,9 @@ When you are done:
 
 - [Extend](https://repl.it/@Admin7/extendlist)
 ```python
-# copy & paste your solution here
+# def return_extended(l, iter):
+  l.extend(iter)
+  return l
 ```
 
 - [Extend](https://repl.it/@Admin7/creatematrix)
@@ -37,7 +46,15 @@ When you are done:
 #### Dictionaries
 - [Receipt Tally](https://repl.it/@Admin7/receipttally)
 ```python
-# copy & paste your solution here
+# def get_total(trans, cat): # transactions, 'party favors'
+  total = 0 # 100
+  for cur_trans in trans: #          {
+  #   'category': 'party favors',
+  #   'subtotal': 130
+  # }
+    if cur_trans["category"] == cat:
+     total = total + cur_trans["subtotal"] #do something here
+  return total
 ```
 
 - [Translation](https://repl.it/@Admin7/translations)
