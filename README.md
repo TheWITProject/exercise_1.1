@@ -15,51 +15,106 @@ When you are done:
 #### Loops & Lists
 - [Max Value](https://repl.it/@Admin7/maxvalue)
 ```python
-# copy & paste your solution here
+def return_max(l):
+  result = l[0]
+  if len(l) == 0:
+    return None
+  for i in l:
+    if i > result:
+      result = i
+  return result
+
 ```
 
 - [Min Value](https://repl.it/@Admin7/minvalue)
 ```python
-# copy & paste your solution here
+def return_min(l):
+  if len(l) == 0:
+    return None
+  result = l[0]
+  for i in l:
+    if i < result:
+      result = i
+  return result
+
 ```
 
 - [Extend](https://repl.it/@Admin7/extendlist)
 ```python
-# copy & paste your solution here
+def return_extended(e, iter):
+  for i in iter:
+    e.append(i)
+  return e
+
 ```
 
 - [Extend](https://repl.it/@Admin7/creatematrix)
 ```python
-# copy & paste your solution here
+def create_matrix(h, w):
+  result = []
+  for i in range(h):
+    row = []
+    for x in range(w):
+      row.append('#')
+    result.append(row)
+  return result
+
 ```
 
 
 #### Dictionaries
 - [Receipt Tally](https://repl.it/@Admin7/receipttally)
 ```python
-# copy & paste your solution here
+def get_total(x, y):
+  total = 0
+  for tally in x:
+    if tally[‘y’] == y:
+      total = total + tally['subtotal']
+  return total
+
 ```
 
 - [Translation](https://repl.it/@Admin7/translations)
 ```python
-# copy & paste your solution here
+def translation(word, lang):
+  a = ''
+  for key,value in translations.items():
+    if key == word:
+      a = translations[key]
+      a = a.get(lang)
+  return a
+
 ```
 
 - [Check RSVP](https://repl.it/@Admin7/checkrsvp)
 ```python
-# copy & paste your solution here
+def check_rsvp(event):
+  total = 0
+  for i in event:
+    if event.get(i) == True:
+      total = total + 1
+  return total
+
 ```
 
 
 #### Functions
 - [Aint No Callback Girl](https://repl.it/@Admin7/aintnocallbackgirl)
 ```python
-# copy & paste your solution here
+def callbacker(l, callback):
+  return list(map(callback, l))
+
 ```
 
 - [Recursion?! Recursive Countdown](https://repl.it/@Admin7/recursivecountdown)
 ```python
-# copy & paste your solution here
+def recursive_countdown(n):
+  if (n == 1):
+    print(1)
+  else:
+    print(n)
+    recursive_countdown(n-1)
+
 ```
 
 
